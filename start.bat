@@ -1,7 +1,7 @@
 rem -- FRANCE SURVIVAL ARK: SURVIVAL ASCENDED | SERVER SCRIPT ALL IN ONE | --
 rem -- Configuration variables --
 set "SessionName=YOUR_SERVER_NAME_HERE"
-set "ServerAdminPassword=YOUR_SERVER_PASSWORD_HERE"
+set "ServerAdminPassword=YOUR_SERVER_ADMIN_PASSWORD_HERE"
 set "GamePort=7777"
 set "SecondGamePort=7778"
 set "QueryPort=27015"
