@@ -6,6 +6,8 @@ This script is designed to streamline the setup and maintenance of an ARK: Survi
 :warning: **This script NOT automatically update** :warning:
 > Regular manual checks are recommended to ensure the server is up-to-date with the latest game versions and patches.
 
+:warning: **RUN AS ADMINISTRATOR FOR FIREWALL RULES** :warning:
+
 :warning: **NO CERTIFICATE REQUIRED** :warning:
 
 
