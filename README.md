@@ -4,6 +4,8 @@ This script is designed to streamline the setup and maintenance of an ARK: Survi
 
 #### Mandatory and Optional Variables
 
+:warning: NO CERTIFICATE REQUIRED :warning:
+
 1. **Mandatory Variables:**
    - `SessionName`: The name of your server. This will appear in the ARK server list.
    - `ServerAdminPassword`: The password for server administrators.
@@ -16,7 +18,6 @@ This script is designed to streamline the setup and maintenance of an ARK: Survi
 2. **Optional Variables:**
    - `RCONPort` and `RCONPassword`: Port and password for RCON, used for remote server management. If not set, RCON configuration is skipped.
    - `Mods`: List of mods to use on the server, separated by commas. Leave blank if no mods are used.
-   - `Server_Executable`: The name of the server executable. Default is `ArkAscendedServer.exe`.
 
 #### Script Features
 
