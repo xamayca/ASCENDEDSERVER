@@ -2,8 +2,6 @@
 
 This script is designed to streamline the setup and maintenance of an ARK: Survival Ascended server. It automates various tasks including checking and installing necessary dependencies, configuring firewall rules, downloading and installing SteamCMD, as well as managing the game server itself.
 
-#### :key: Mandatory and Optional Variables ###
-
 
 :warning: **This script NOT automatically update** :warning:
 > Regular manual checks are recommended to ensure the server is up-to-date with the latest game versions and patches.
