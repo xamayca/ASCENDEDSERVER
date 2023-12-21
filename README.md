@@ -4,8 +4,14 @@ This script is designed to streamline the setup and maintenance of an ARK: Survi
 
 #### :key: Mandatory and Optional Variables ###
 
+
+:warning: **This script NOT automatically update** :warning:
+> Regular manual checks are recommended to ensure the server is up-to-date with the latest game versions and patches.
+
 :warning: **NO CERTIFICATE REQUIRED** :warning:
 
+
+:key: **Mandatory and Optional Variables**
 1. **Mandatory Variables:**
    - `SessionName`: The name of your server. This will appear in the ARK server list.
    - `ServerAdminPassword`: The password for server administrators.
