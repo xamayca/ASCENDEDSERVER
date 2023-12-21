@@ -1,4 +1,4 @@
-### :flag_fr: FRANCE SURVIVAL ARK ASCENDED SERVER SCRIPT ALL IN ONE :flag_fr: ###
+### :fr: FRANCE SURVIVAL ARK ASCENDED SERVER SCRIPT ALL IN ONE :fr: ###
 
 This script is designed to streamline the setup and maintenance of an ARK: Survival Ascended server. It automates various tasks including checking and installing necessary dependencies, configuring firewall rules, downloading and installing SteamCMD, as well as managing the game server itself.
 
