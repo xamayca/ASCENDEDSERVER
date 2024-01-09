@@ -9,6 +9,13 @@ set "RCONPort="
 set "RCONPassword="
 set "MaxPlayers=20"
 set "Mods="
+set "UseBattlEye=" rem -- True or nothing use BattleEye --
+set "UseDynamicConfig=" rem -- True or nothing use dynamic server config --
+set "ForceRespawnDinos=" rem -- True or nothing wipe dinos at server start --
+set "crossplay-enable-pc=" rem -- True or nothing crossplay pc --
+set "crossplay-enable-wingdk=" rem -- True or nothing crossplay windows store --
+set "crossplay-enable-xsx=" rem -- True or nothing crossplay xbox --
+set "crossplay-enable-ps5=" rem -- True or nothing crossplay ps5 --
 set "DriveLetter=C:\"
 set "SteamCMD_Dir=%DriveLetter%STEAMCMD"
 set "Server_Dir=%DriveLetter%SERVER"
@@ -187,8 +194,50 @@ if not "%Mods%"=="" (
     echo Mods options added to the launch command...
 )
 
+rem -- Add BattleEye option if set --
+if not "%UseBattlEye%"=="" (
+    set "LaunchCommand=%LaunchCommand% -UseBattlEye"
+    echo BattleEye option added to the launch command...
+)
+
+rem -- Add UseDynamicConfig option if set --
+if not "%UseDynamicConfig%"=="" (
+    set "LaunchCommand=%LaunchCommand% -UseDynamicConfig"
+    echo UseDynamicConfig option added to the launch command...
+)
+
+rem -- Add -ForceRespawnDinos option if set --
+if not "%ForceRespawnDinos%"=="" (
+    set "LaunchCommand=%LaunchCommand% -ForceRespawnDinos"
+    echo Force Respawn Dinos option added to the launch command...
+)
+
+rem -- Add crossplay-enable-pc option if set --
+if not "%crossplay-enable-pc%"=="" (
+    set "LaunchCommand=%LaunchCommand% -crossplay-enable-pc"
+    echo Crossplay PC option added to the launch command...
+)
+
+rem -- Add crossplay-enable-wingdk option if set --
+if not "%crossplay-enable-wingdk%"=="" (
+    set "LaunchCommand=%LaunchCommand% -crossplay-enable-wingdk"
+    echo Crossplay Windows GDK option added to the launch command...
+)
+
+rem -- Add crossplay-enable-xsx option if set --
+if not "%crossplay-enable-xsx%"=="" (
+    set "LaunchCommand=%LaunchCommand% -crossplay-enable-xsx"
+    echo Crossplay Xbox Series X option added to the launch command...
+)
+
+rem -- Add crossplay-enable-ps5 option if set --
+if not "%crossplay-enable-ps5%"=="" (
+    set "LaunchCommand=%LaunchCommand% -crossplay-enable-ps5"
+    echo Crossplay PS5 option added to the launch command...
+)
+
 rem -- Add remaining launch options --
-set "LaunchCommand=%LaunchCommand% -NoTransferFromFiltering -WinLiveMaxPlayers=%MaxPlayers% -forcerespawndinos -crossplay-enable-pc -crossplay-enable-wingdk -crossplay-enable-xsx -crossplay-enable-ps5"
+set "LaunchCommand=%LaunchCommand% -NoTransferFromFiltering -WinLiveMaxPlayers=%MaxPlayers%"
 
 rem -- Launch the server with the configured options --
 %LaunchCommand%

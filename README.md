@@ -22,8 +22,14 @@ This script is designed to streamline the setup and maintenance of an ARK: Survi
    - `DriveLetter`: The drive letter where the server and SteamCMD will be installed. For example, `C:\`.
 
 2. **Optional Variables:**
-   - `RCONPort` and `RCONPassword`: Port and password for RCON, used for remote server management. If not set, RCON configuration is skipped.
+   - `RCONPort` and `RCONPassword`: Port and password for RCON, used for remote server management.
+      If not set, RCON configuration is skipped.
    - `Mods`: List of mods to use on the server, separated by commas. Leave blank if no mods are used.
+   - `UseDynamicConfig`: Set to True to enable dynamic server configuration. Leave blank to disable.
+   - `crossplay-enable-pc`, `crossplay-enable-wingdk`, `crossplay-enable-xsx`, `crossplay-enable-ps5`:
+      Set to True to enable crossplay for the respective platforms. Leave blank to disable.
+   - `ForceRespawnDinos`: Set to True to force dinos to respawn when the server starts. Leave blank to disable.
+   - `UseBattlEye`: Set to True to enable BattleEye anti-cheat protection. Leave blank to disable.
 
 #### :wrench: Script Features ###
 
